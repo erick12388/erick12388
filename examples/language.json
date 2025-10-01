@@ -1,0 +1,58 @@
+{
+  "terms": [
+    {
+      "term": "knowledge management",
+      "category": "strategic",
+      "weight": 1.2,
+      "description": "Organisational processes for capturing, sharing and using knowledge",
+      "variants": ["KM", "knowledge-sharing"]
+    },
+    {
+      "term": "community of practice",
+      "category": "social",
+      "weight": 1.0,
+      "description": "Group of people who share a craft or profession",
+      "variants": ["CoP", "practice community"]
+    },
+    {
+      "term": "tacit knowledge",
+      "category": "cognitive",
+      "weight": 0.8,
+      "description": "Implicit knowledge that is hard to formalise"
+    },
+    {
+      "term": "digital platform",
+      "category": "technical",
+      "weight": 1.1,
+      "description": "Software infrastructure enabling interactions"
+    }
+  ],
+  "dimensions": [
+    {
+      "name": "Technicality",
+      "description": "Intensity of technical jargon",
+      "weights": {
+        "technical": 1.0,
+        "strategic": 0.4,
+        "cognitive": 0.3,
+        "social": 0.2,
+        "__default__": 0.1
+      }
+    },
+    {
+      "name": "Social embeddedness",
+      "description": "Emphasis on social or organisational constructs",
+      "weights": {
+        "social": 1.0,
+        "strategic": 0.6,
+        "cognitive": 0.4,
+        "technical": 0.2,
+        "__default__": 0.1
+      }
+    }
+  ],
+  "density_thresholds": {
+    "high": 0.15,
+    "moderate": 0.08
+  }
+}
